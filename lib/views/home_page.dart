@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("REST api"),
+        title: const Text("api call"),
       ),
       body: Visibility(
         visible: isLoaded,
