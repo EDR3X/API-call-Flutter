@@ -11,16 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Post>? posts;
-  var isLoaded = false;
-
-  @override
-  void initState() {
-    super.initState();
-
-    //*fetch data from API
-
-    getData();
-  }
+  bool isLoaded = false;
 
   getData() async {
     posts = await RemoteService().getPosts();
@@ -29,6 +20,13 @@ class _HomePageState extends State<HomePage> {
         isLoaded = true;
       });
     }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    //*fetch data from API
+    getData();
   }
 
   @override
@@ -71,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.bold),
+                              fontSize: 20, fontWeight: FontWeight.normal),
                         ),
                       ],
                     ),
