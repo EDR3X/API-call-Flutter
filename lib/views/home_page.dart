@@ -62,14 +62,18 @@ class _HomePageState extends State<HomePage> {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.bold),
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         Text(
                           posts![index].body ?? '',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.normal),
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal,
+                          ),
                         ),
                       ],
                     ),

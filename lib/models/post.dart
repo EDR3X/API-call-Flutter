@@ -11,7 +11,7 @@ class Post {
     required this.userId,
     required this.id,
     required this.title,
-    required this.body,
+    this.body,
   });
 
   int userId;
